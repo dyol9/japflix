@@ -15,8 +15,6 @@ async function loadMoviesData() {
     }
 }
 
-// ************ FUNCIONES AUXILIARES (usadas en múltiples pautas) ************
-
 // Función para convertir el puntaje a estrellas
 
 function getStarsHtml(score) {
@@ -89,8 +87,7 @@ function searchMovies() {
         `;
         
 // ************ PAUTA 3 ************
-
-        
+       
 li.addEventListener('click', () => showMovieDetails(movie));
 
 listaElement.appendChild(li);
@@ -142,12 +139,11 @@ function showMovieDetails(movie) {
     modal.show();
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
 
 // PAUTA 1: Cargar los datos al inicio
 
-    loadMoviesData();
+loadMoviesData();
     
 // PAUTA 2: Eventos de búsqueda
 
